@@ -1,0 +1,87 @@
+/*give the display property*/
+/*display : property */
+
+.grid-container{
+    display: grid;
+    /*1.define rows with single quotations*/
+    /*2.define what grid area you want to see*/
+    /*3.repeat 6 times for 6 divisions*/
+
+    grid-template-areas: 
+    'navsection navsection navsection navsection navsection navsection'
+
+    ' sidemenua sidemenua bannersection bannersection bannersection sidemenub'
+
+    'maingallery maingallery maingallery maingallery maingallery maingallery'
+
+    'footersection footersection footersection footersection footersection footersection'
+
+    ;
+}
+
+#navsection{
+    background-color:red ;
+    grid-area: navsection;
+}
+
+#bannersection{
+    
+    grid-area: bannersection;
+}
+
+
+#maingallery{
+    background-color: pink;
+    grid-area: maingallery;
+}
+
+
+#footersection{
+    background-color: orange;
+    grid-area: footersection;
+}
+
+#sidemenua{
+    background-color:green;
+    grid-area: sidemenua;
+}
+
+#sidemenub{
+    background-color:blue;
+    grid-area: sidemenub;
+}
+
+/* when writing a media query positinon it at the very end of ths css file*/
+
+@media only screen and (max-width:600px){
+   body{background-color:black;}
+
+   .grid-container{
+    display: grid;
+    /*1.define rows with single quotations*/
+    /*2.define what grid area you want to see*/
+    /*3.repeat 6 times for 6 divisions*/
+
+    grid-template-areas: 
+    'navsection navsection navsection navsection navsection navsection'
+
+    'sidemenua sidemenua sidemenua sidemenua sidemenua sidemenua'
+
+    ' bannersection bannersection bannersection bannersection bannersection bannersection'
+
+    'sidemenub sidemenub sidemenub sidemenub sidemenub sidemenub'
+    
+    'maingallery maingallery maingallery maingallery maingallery maingallery'
+
+    'footersection footersection footersection footersection footersection footersection'
+
+    ;
+}
+
+
+
+
+
+}
+
+
